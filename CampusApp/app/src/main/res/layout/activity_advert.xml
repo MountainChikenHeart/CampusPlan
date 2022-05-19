@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bj"
+        android:src="@mipmap/bj2"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="40sp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/tojump"
+            android:id="@+id/btn_tojump"
+            android:alpha="0.4"
+            android:layout_width="60sp"
+            android:layout_height="35sp"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:id="@+id/tv_wenzi"
+            android:layout_width="60sp"
+            android:layout_height="35sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

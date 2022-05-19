@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e6e6e6"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:src="@mipmap/profile"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="5sp"
+            android:layout_toEndOf="@id/head"
+            android:text="Claven"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="52dp"
+            android:layout_toEndOf="@id/head"
+            android:text="123456"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <com.wzit.campusapp.view.IconFontTextView
+            android:id="@+id/shezhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="92dp"
+            android:layout_marginRight="10sp"
+            android:text="@string/icon_shezhi"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:id="@+id/top11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:padding="10sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_ewm"
+                android:textColor="#e6e6e6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/ic_ewm"
+                android:gravity="center_vertical"
+                android:text="二维码"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/icon_yjt"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+        <RelativeLayout
+            android:background="#fff"
+            android:padding="10sp"
+            android:id="@+id/top2"
+            android:layout_below="@id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_grxx"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_grxx"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_dqsj"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/ic_grxx"
+                android:gravity="center_vertical"
+                android:text="个人信息"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:text="@string/icon_yjt"
+                android:gravity="center_vertical"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+
+        <RelativeLayout
+            android:background="#fff"
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/line2"
+            android:padding="10sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/iv_xgmm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_xgmm"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_sbbh"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/iv_xgmm"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right3"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="@string/icon_yjt"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+
+        <ImageView
+            android:id="@+id/line5"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10sp"
+            android:id="@+id/top6"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@id/line5"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:padding="10sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_fkjy"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_fkjy"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_xtbb"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/ic_fkjy"
+                android:gravity="center_vertical"
+                android:text="反馈建议"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right6"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/icon_yjt"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line6"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/top6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/top7"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@id/line6"
+            android:background="#fff"
+            android:padding="10sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_gywm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_gywm"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_jywl"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/ic_gywm"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right8"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/icon_yjt"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line8"
+            android:layout_marginLeft="10sp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/top7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"/>
+
+        <RelativeLayout
+            android:id="@+id/top8"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@id/line8"
+            android:background="#fff"
+            android:padding="10sp">
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_sysm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_sysm"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_sysm"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/ic_sysm"
+                android:gravity="center_vertical"
+                android:text="软件协议"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <com.wzit.campusapp.view.IconFontTextView
+                android:id="@+id/ic_right8"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/icon_yjt"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tuichu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pink_shape_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="30sp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

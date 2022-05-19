@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.shehuan.niv.NiceImageView
+            android:id="@+id/ni_img"
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:scaleType="centerCrop"
+            app:border_color="#f7f7f2"
+            app:border_width="2dp"
+            app:corner_radius="4dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ni_img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="标题"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/ni_img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="zhunaf61"
+            android:textSize="13dp" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_toRightOf="@id/ni_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="2020-08-31"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

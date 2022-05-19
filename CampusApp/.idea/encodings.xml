@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/iconfont.ttf" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/activity/AdvertActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/activity/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/CmtDetailsListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/CmtListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/ComtInfoUserListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/ComtInfoUserListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/SxxListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/adapter/SxxListChildrenAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/base/BaseActivityBlack.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/base/BaseActivityWhite.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/base/BaseFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/base/BaseRvAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/base/BaseRvViewHolder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/interfaces/OkSuccessInterface.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/interfaces/XPopupInterface.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/SysApplication.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/api/AppNetConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/common/AndroidDeviceUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/common/CommonUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/common/NumUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/common/QRCodeUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/glide/BaseAppGlideModule.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/utils/glide/GlideCacheUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/DYLoadingView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/GlideLoader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/IconFontTextView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/IconFontTextView2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/dialog/DYLoading.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wzit/campusapp/view/dialog/ShopBuyDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/bianshen.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/tojump.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_advert.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dyloading.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/attr.xml" charset="GBK" />
+  </component>
+</project>

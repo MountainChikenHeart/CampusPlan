@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <com.wzit.campusapp.view.CustomVideoView
+        android:id="@+id/btnVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff" />
+
+        <ImageView
+            android:layout_marginTop="8sp"
+            android:id="@+id/xian1"
+            android:background="#ffffff"
+            android:layout_below="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian1"
+            android:layout_marginTop="20sp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_marginTop="8sp"
+            android:id="@+id/xian2"
+            android:background="#ffffff"
+            android:layout_below="@id/password"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_below="@id/xian2"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/pink_shape_bg"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="验证码登录"
+            android:visibility="gone"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/wjmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="用户注册"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:gravity="center"
+        android:text="登录即代表您已阅读并同意\n《服务隐私政策》"
+        android:layout_marginBottom="50dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

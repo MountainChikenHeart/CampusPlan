@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzit.campusapi.dao.CommunityInfoDao">
+
+    <resultMap type="com.wzit.campusapi.entity.CommunityInfo" id="CommunityInfoMap">
+        <result property="communityId" column="community_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="communityName" column="community_name" jdbcType="VARCHAR"/>
+        <result property="communityNum" column="community_num" jdbcType="VARCHAR"/>
+        <result property="communityCode" column="community_code" jdbcType="VARCHAR"/>
+        <result property="communityImg" column="community_img" jdbcType="VARCHAR"/>
+        <result property="communityIntro" column="community_intro" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单条-->
+    <select id="selectone" resultMap="CommunityInfoMap">
+        select community_id,
+               user_id,
+               create_time,
+               community_name,
+               community_num,
+               community_code,
+               community_img,
+               community_intro
+        from community_info
+        where community_id = #{communityId}
+    </select>
+
+    <!--分页查询-->
+    <select id="selectpage" resultMap="CommunityInfoMap">
+        select
+        community_id, user_id, create_time, community_name, community_num, community_code, community_img,
+        community_intro
+        from community_info
+        <where>
+            <if test="communityId != null">
+                and community_id = #{communityId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="communityName != null and communityName != ''">
+                and community_name = #{communityName}
+            </if>
+            <if test="communityNum != null and communityNum != ''">
+                and community_num = #{communityNum}
+            </if>
+            <if test="communityCode != null and communityCode != ''">
+                and community_code = #{communityCode}
+            </if>
+            <if test="communityImg != null and communityImg != ''">
+                and community_img = #{communityImg}
+            </if>
+            <if test="communityIntro != null and communityIntro != ''">
+                and community_intro = #{communityIntro}
+            </if>
+        </where>
+        order by community_id DESC
+        limit #{pageNum}, #{pageSize}
+    </select>
+
+    <!--查询所有-->
+    <select id="selectall" resultMap="CommunityInfoMap">
+        select
+        community_id, user_id, create_time, community_name, community_num, community_code, community_img,
+        community_intro
+        from community_info
+        <where>
+            <if test="communityId != null">
+                and community_id = #{communityId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="communityName != null and communityName != ''">
+                and community_name = #{communityName}
+            </if>
+            <if test="communityNum != null and communityNum != ''">
+                and community_num = #{communityNum}
+            </if>
+            <if test="communityCode != null and communityCode != ''">
+                and community_code = #{communityCode}
+            </if>
+            <if test="communityImg != null and communityImg != ''">
+                and community_img = #{communityImg}
+            </if>
+            <if test="communityIntro != null and communityIntro != ''">
+                and community_intro = #{communityIntro}
+            </if>
+        </where>
+    </select>
+
+    <!--新增-->
+    <insert id="insert" keyProperty="communityId" useGeneratedKeys="true">
+        insert into community_info(user_id, create_time, community_name, community_num, community_code, community_img,
+                                   community_intro)
+        values (#{userId}, #{createTime}, #{communityName}, #{communityNum}, #{communityCode}, #{communityImg},
+                #{communityIntro})
+    </insert>
+
+    <!--更新-->
+    <update id="update">
+        update community_info
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="communityName != null and communityName != ''">
+                community_name = #{communityName},
+            </if>
+            <if test="communityNum != null and communityNum != ''">
+                community_num = #{communityNum},
+            </if>
+            <if test="communityCode != null and communityCode != ''">
+                community_code = #{communityCode},
+            </if>
+            <if test="communityImg != null and communityImg != ''">
+                community_img = #{communityImg},
+            </if>
+            <if test="communityIntro != null and communityIntro != ''">
+                community_intro = #{communityIntro},
+            </if>
+        </set>
+        where community_id = #{communityId}
+    </update>
+
+    <!--删除-->
+    <delete id="delete">
+        delete
+        from community_info
+        where community_id = #{communityId}
+    </delete>
+
+</mapper>
+

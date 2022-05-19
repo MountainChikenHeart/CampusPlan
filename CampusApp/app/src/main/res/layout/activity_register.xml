@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cha"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/zuojiantou" />
+
+    <TextView
+        android:id="@+id/wenzi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cha"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="28sp"
+        android:text="您即将注册信息"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wenzi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wenzi1"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:text="欢迎使用，使用前请先注册吧！"
+        android:textColor="#000" />
+
+    <RelativeLayout
+        android:id="@+id/rl_yonghuming"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/wenzi2"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/gray_shape_bg">
+
+        <EditText
+            android:id="@+id/yonghuming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入注册用户名"
+            android:inputType="text"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mima"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/rl_yonghuming"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/gray_shape_bg">
+
+        <EditText
+            android:id="@+id/mima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入注册密码"
+            android:inputType="textPassword"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_querenmima"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/rl_mima"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/gray_shape_bg">
+
+        <EditText
+            android:id="@+id/querenmima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入确认密码"
+            android:inputType="textPassword"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/rl_querenmima"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/gray_shape_bg">
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="31sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择性别"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_school"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/rl_sex"
+        android:layout_marginLeft="31sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/gray_shape_bg">
+
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入学校"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:layout_below="@id/rl_school"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/pink_shape_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_zhuce"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
+        android:text="已有账号？直接登录"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/denglu"
+        android:layout_marginTop="80sp"
+        android:gravity="center"
+        android:text="已阅读并同意用户协议和隐私政策"
+        android:textSize="12sp" />
+
+</RelativeLayout>

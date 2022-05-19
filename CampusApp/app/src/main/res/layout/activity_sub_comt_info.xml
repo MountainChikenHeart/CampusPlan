@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_tab" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_tupian"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/show"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tianjia"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tjtp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tupian"
+                android:gravity="center"
+                android:text="请上传一张任务图片" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_tp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/pink_shape_bg"
+                android:text="提交"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

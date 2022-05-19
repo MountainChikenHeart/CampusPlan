@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">UTime</string>
+
+    <!--搜索-->
+    <string name="icon_sousuo">&#xe62d;</string>
+    <!--设置-->
+    <string name="icon_shezhi">&#xe630;</string>
+    <!--左箭头-->
+    <string name="icon_zjt">&#xe60c;</string>
+    <!--右箭头-->
+    <string name="icon_yjt">&#xe623;</string>
+    <!--修改密码-->
+    <string name="icon_xgmm">&#xe642;</string>
+    <!--关于我们-->
+    <string name="icon_gywm">&#xe612;</string>
+    <!--反馈建议-->
+    <string name="icon_fkjy">&#xe638;</string>
+    <!--个人信息-->
+    <string name="icon_grxx">&#xe641;</string>
+    <!--二维码-->
+    <string name="icon_ewm">&#xe619;</string>
+    <!--天气新闻-->
+    <string name="icon_tq">&#xe647;</string>
+    <!--使用说明-->
+    <string name="icon_sysm">&#xe64e;</string>
+    <!--日期计算器-->
+    <string name="icon_rqjsq">&#xe63c;</string>
+    <!--秒表-->
+    <string name="icon_mb">&#xe64c;</string>
+    <!--计时器-->
+    <string name="icon_jsq">&#xe632;</string>
+    <!--历史记录-->
+    <string name="icon_lsjl">&#xe650;</string>
+    <!--更多三个点-->
+    <string name="icon_more">&#xe61b;</string>
+
+    <string-array name="week">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="time">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

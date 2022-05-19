@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/iv_degree1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox1"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp" />
+
+    <CheckBox
+        android:id="@+id/iv_degree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox2"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp" />
+
+    <CheckBox
+        android:id="@+id/iv_degree3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp"
+        android:theme="@style/MyCheckBox3" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50sp"
+        android:text="哒哒哒哒哒" />
+
+   <TextView
+       android:text="今天"
+       android:textColor="#4773fa"
+       android:id="@+id/tv_time"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="10sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+</RelativeLayout>

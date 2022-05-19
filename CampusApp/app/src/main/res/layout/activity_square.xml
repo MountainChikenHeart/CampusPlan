@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_tab" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="请输入圈子名称"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/top5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="12sp"
+                android:background="@drawable/butn_shape_red"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入圈子介绍"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="100sp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tupian"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_below="@id/top5"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/show"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tianjia"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tjtp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tupian"
+                android:gravity="center"
+                android:text="请上传一张圈子图片" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_tp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/pink_shape_bg"
+                android:text="发布"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_tab" android:id="@+id/top"/>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_below="@id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/iv_degree1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox1"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp" />
+
+        <CheckBox
+            android:id="@+id/iv_degree2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox2"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp" />
+
+        <CheckBox
+            android:id="@+id/iv_degree3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox3"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:textColor="#4773fa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50sp"
+            android:text="3月24日" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25sp"
+            android:layout_marginRight="10sp"
+            android:src="@mipmap/hq"
+            android:layout_height="25sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/top1"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="发发发发"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_below="@id/tv_name"
+            android:id="@+id/tv_content"
+            android:layout_marginTop="15sp"
+            android:text="发发发发"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_shape_bg"
+            android:text="删除任务"/>
+    </RelativeLayout>
+</RelativeLayout>

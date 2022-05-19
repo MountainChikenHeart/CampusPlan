@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }//阿里云镜像服务
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }//阿里云镜像服务
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+rootProject.name = "CampusApp"
+include ':app'

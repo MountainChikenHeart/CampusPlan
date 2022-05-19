@@ -1,0 +1,226 @@
+package com.wzit.campusapp.bean;
+
+import java.util.List;
+
+public class GetCmtBean {
+
+    private String msg;
+    private Integer code;
+    private List<DataDTO> data;
+    private Integer pagesum;
+    private Long timestamp;
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public List<DataDTO> getData() {
+        return data;
+    }
+
+    public void setData(List<DataDTO> data) {
+        this.data = data;
+    }
+
+    public Integer getPagesum() {
+        return pagesum;
+    }
+
+    public void setPagesum(Integer pagesum) {
+        this.pagesum = pagesum;
+    }
+
+    public Long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Long timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public static class DataDTO {
+        private String createTime;
+        private Integer communityId;
+        private Integer userId;
+        private String userName;
+        private Object userPhone;
+        private String userHeaderimg;
+        private Integer userSex;
+        private String communityName;
+        private String communityNum;
+        private String communityCode;
+        private String communityImg;
+        private String communityIntro;
+        private String userNum;
+        private String userPassword;
+        private String userSignature;
+        private String userSchool;
+        private Double userIntegral;
+        private Integer isVip;
+        private Integer isJoin;
+
+        public String getCreateTime() {
+            return createTime;
+        }
+
+        public void setCreateTime(String createTime) {
+            this.createTime = createTime;
+        }
+
+        public Integer getCommunityId() {
+            return communityId;
+        }
+
+        public void setCommunityId(Integer communityId) {
+            this.communityId = communityId;
+        }
+
+        public Integer getUserId() {
+            return userId;
+        }
+
+        public void setUserId(Integer userId) {
+            this.userId = userId;
+        }
+
+        public String getUserName() {
+            return userName;
+        }
+
+        public void setUserName(String userName) {
+            this.userName = userName;
+        }
+
+        public Object getUserPhone() {
+            return userPhone;
+        }
+
+        public void setUserPhone(Object userPhone) {
+            this.userPhone = userPhone;
+        }
+
+        public String getUserHeaderimg() {
+            return userHeaderimg;
+        }
+
+        public void setUserHeaderimg(String userHeaderimg) {
+            this.userHeaderimg = userHeaderimg;
+        }
+
+        public Integer getUserSex() {
+            return userSex;
+        }
+
+        public void setUserSex(Integer userSex) {
+            this.userSex = userSex;
+        }
+
+        public String getCommunityName() {
+            return communityName;
+        }
+
+        public void setCommunityName(String communityName) {
+            this.communityName = communityName;
+        }
+
+        public String getCommunityNum() {
+            return communityNum;
+        }
+
+        public void setCommunityNum(String communityNum) {
+            this.communityNum = communityNum;
+        }
+
+        public String getCommunityCode() {
+            return communityCode;
+        }
+
+        public void setCommunityCode(String communityCode) {
+            this.communityCode = communityCode;
+        }
+
+        public String getCommunityImg() {
+            return communityImg;
+        }
+
+        public void setCommunityImg(String communityImg) {
+            this.communityImg = communityImg;
+        }
+
+        public String getCommunityIntro() {
+            return communityIntro;
+        }
+
+        public void setCommunityIntro(String communityIntro) {
+            this.communityIntro = communityIntro;
+        }
+
+        public String getUserNum() {
+            return userNum;
+        }
+
+        public void setUserNum(String userNum) {
+            this.userNum = userNum;
+        }
+
+        public String getUserPassword() {
+            return userPassword;
+        }
+
+        public void setUserPassword(String userPassword) {
+            this.userPassword = userPassword;
+        }
+
+        public String getUserSignature() {
+            return userSignature;
+        }
+
+        public void setUserSignature(String userSignature) {
+            this.userSignature = userSignature;
+        }
+
+        public String getUserSchool() {
+            return userSchool;
+        }
+
+        public void setUserSchool(String userSchool) {
+            this.userSchool = userSchool;
+        }
+
+        public Double getUserIntegral() {
+            return userIntegral;
+        }
+
+        public void setUserIntegral(Double userIntegral) {
+            this.userIntegral = userIntegral;
+        }
+
+        public Integer getIsVip() {
+            return isVip;
+        }
+
+        public void setIsVip(Integer isVip) {
+            this.isVip = isVip;
+        }
+
+        public Integer getIsJoin() {
+            return isJoin;
+        }
+
+        public void setIsJoin(Integer isJoin) {
+            this.isJoin = isJoin;
+        }
+    }
+}

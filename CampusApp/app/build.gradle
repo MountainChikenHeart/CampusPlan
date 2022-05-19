@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk COMPILE_SDK_VERSION as Integer
+
+    defaultConfig {
+        applicationId "com.wzit.samapp"
+        minSdk MIN_SDK_VERSION as Integer
+        targetSdk TARGET_SDK_VERSION as Integer
+        versionCode VERSION_CODE as Integer
+        versionName VERSION_NAME
+
+        //下面这两个是对话框插件启用模糊效果
+        renderscriptTargetApi MIN_SDK_VERSION as Integer
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+}
+
+dependencies {
+
+    api "androidx.appcompat:appcompat:$APPCOMPAT_VERSION"
+    api "com.google.android.material:material:$MATERIAL_VERSION"
+    api "androidx.constraintlayout:constraintlayout:$CONSTRAINT_LAYOUT_VERSION"
+    testImplementation "junit:junit:$JUNIT_VERSION"
+    androidTestImplementation "androidx.test.ext:junit:$EXT_JUNIT_VERSION"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$ESPRESSO_CORE_VERSION"
+
+    //第三方开源框架
+    api "me.jessyan:autosize:$AUTOSIZE_VERSION"//今日头条屏幕适配框架
+    api "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"//butterknife 注解工具
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_COMPILER_VERSION"
+    api "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"// OKHttp
+    api "de.hdodenhof:circleimageview:$CIRCLEIMAGEVIEW_VERSION"//圆形头像框架
+    api "com.github.bumptech.glide:glide:$GLIDE_VERSION"//Glide图片加载框架
+    annotationProcessor "com.github.bumptech.glide:compiler:$GLIDE_COMPILER_VERSION"
+    api "com.kongzue.dialog:dialog:$KONGZU_DIALOG_VERSION"//空祖对话框插件
+    api "com.google.code.gson:gson:$GSON_VERSION"//Gson
+    api "com.lxj:xpopup:$XPOPUP_VERSION"  //xpopup
+    api "com.gyf.immersionbar:immersionbar:$IMMERSIONBAR_VERSION"//沉浸式状态栏
+    api "androidx.multidex:multidex:$MULTIDEX_VERSION"//multidex库
+    api "com.github.SheHuan:NiceImageView:$NICEIMAGEVIEW_VERSION"//矩形图片框架
+    api "com.yanzhenjie:permission:$PERMISSION_VERSION"
+    api "com.scwang.smartrefresh:SmartRefreshLayout:$SMARTREFRESHLAYOUT_VERSION"
+    api "com.scwang.smartrefresh:SmartRefreshHeader:$SMARTREFRESHLAYOUT_VERSION"
+    //没有使用特殊Header，可以不加这行
+    api "cn.hutool:hutool-all:$HUTOOL_VERSION"//hutool
+    api "com.github.xuexiangjys:XUI:$XUI_VERSION"//XUI
+    api "com.lcw.library:imagepicker:$IMAGEPICKER_VERSION"//上传图片/视频
+    api "com.makeramen:roundedimageview:$ROUNDEDIMAGEVIEW_VERSION" // 圆角图片
+    api "com.google.zxing:core:$ZXING_CORE_VERSION"//二维码扫描
+    api "com.youth.banner:banner:$BANNER_VERSION"//banner横幅
+    api "com.tencent.tbs:tbssdk:$TBSSDK_VERSION"//腾讯X5浏览服务
+    api "q.rorbin:VerticalTabLayout:$VERTICALTABLAYOUT_VERSION"//竖直tab
+}

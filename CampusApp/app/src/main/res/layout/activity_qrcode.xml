@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e6e6e6"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_tab" android:id="@+id/top"/>
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_marginTop="80sp"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/bianshen"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:padding="20sp"/>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:gravity="center"
+        android:paddingBottom="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/top2"
+        android:text="扫一扫或截图识别二维码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/childrenshow"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tab_bottom"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/tab_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_one"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:src="@mipmap/one_sel" />
+
+                <TextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_one"
+                    android:gravity="center"
+                    android:text="计划"
+                    android:textColor="#f682a2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tab_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_two"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:src="@mipmap/two_nor" />
+
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_two"
+                    android:gravity="center"
+                    android:text="圈子"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_four"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:src="@mipmap/four_nor" />
+
+                <TextView
+                    android:id="@+id/tv_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_four"
+                    android:layout_marginTop="2sp"
+                    android:gravity="center"
+                    android:text="课程"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tab_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_five"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:src="@mipmap/five_nor" />
+
+                <TextView
+                    android:id="@+id/tv_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_five"
+                    android:layout_marginTop="2sp"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
